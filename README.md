@@ -51,3 +51,20 @@ A música de arquivo pode tocar no clique de abertura. YouTube/Spotify dependem 
 ## V22
 - Adjusted only the HOME button position: vertically centered inside the site header.
 - No changes to Card Factory, Love File, or Old Internet Zone.
+
+
+## V23
+- HOME is now structurally inside the header's existing right status panel.
+- Removed the floating/absolute HOME navigation entirely.
+- No other page functionality or layout was changed.
+
+
+## Final language pass
+- Site naming uses RENATO and RENATINHO.
+- Removed the nickname RÊ entirely.
+
+
+## V24
+- Removed HOME from the header completely.
+- Added a standalone ★ HOME ★ desktop-style shortcut directly below the header.
+- No other site functionality or layout was intentionally changed.

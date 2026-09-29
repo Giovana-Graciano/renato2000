@@ -168,32 +168,46 @@
 }
 </style>
 
-<style id="v22-home-position">
-/* V22: HOME is part of the site header, vertically centered and kept
-   inside the header instead of sitting against the viewport edge. */
-.sitebar{
-  position:relative!important;
-  min-height:72px!important;
-  box-sizing:border-box!important;
+
+
+
+
+<style id="v24-home-style">
+/* V24 — standalone HOME shortcut, intentionally independent of header layout. */
+.desktop-home-wrap{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px 0 4px;
+  padding:0;
+  box-sizing:border-box;
 }
-.v18-site-nav{
-  position:absolute!important;
-  right:12px!important;
-  top:50%!important;
-  transform:translateY(-50%)!important;
-  z-index:50!important;
-  margin:0!important;
-  padding:0!important;
+.desktop-home{
+  display:inline-block;
+  font-family:"Courier New",monospace;
+  font-size:11px;
+  font-weight:900;
+  line-height:1;
+  letter-spacing:.8px;
+  text-decoration:none;
+  text-align:center;
+  color:#102c1b;
+  background:linear-gradient(#ffffff,#d9eadc);
+  border:4px outset #ffffff;
+  box-shadow:3px 3px 0 #111;
+  padding:8px 15px;
+  cursor:pointer;
+  text-shadow:1px 1px #fff;
 }
-.v18-site-nav a{
-  position:static!important;
-  margin:0!important;
-  white-space:nowrap!important;
+.desktop-home:hover{
+  filter:brightness(1.08);
+  transform:translateY(-1px);
 }
-@media(max-width:700px){
-  .sitebar{min-height:78px!important}
-  .v18-site-nav{right:7px!important}
-  .v18-site-nav a{font-size:9px!important;padding:6px 8px!important}
+.desktop-home:active{
+  border-style:inset;
+  transform:translate(2px,2px);
+  box-shadow:1px 1px 0 #111;
 }
 </style>
 </head>
@@ -205,7 +219,7 @@
 <section id="intro" class="screen intro-screen">
   <div class="topbar"><span>RENATINHO_STUDIOS.EXE</span><span>● ONLINE&nbsp;&nbsp;|&nbsp;&nbsp;NETSCAPE 2004</span></div>
   <div class="intro-window">
-    <div class="window-title"><span>★ FELIZ ANIVERSÁRIO RENATINHO ★</span><span>_ □ X</span></div>
+    <div class="window-title"><span>★ FELIZ ANIVERSÁRIO, RENATO ★</span><span>_ □ X</span></div>
     <div class="intro-content">
       <div class="construction">⚠ UNDER CONSTRUCTION ⚠</div>
       <div class="spark-row">✦ ★ ✧ ★ ✦ ★ ✧</div>
@@ -224,11 +238,14 @@
 
 <section id="site" class="screen site-screen hidden">
   <div class="desktop">
-    <header class="sitebar"><nav class="v18-site-nav"><a href="index.html">⌂ HOME</a></nav>
+    <header class="sitebar">
       <div class="brand"><b>RENATINHO</b><small>2000</small></div>
-      <div class="site-title"><span class="blink">★ SPECIAL EDITION ★</span><h2>FELIZ ANIVERSÁRIO RENATINHO</h2><p>THE MOST ADVANCED BIRTHDAY WEBSITE OF 2004*</p></div>
-      <div class="status-box">● ONLINE<br><b>VISITOR #000026</b></div>
+      <div class="site-title"><span class="blink">★ SPECIAL EDITION ★</span><h2>FELIZ ANIVERSÁRIO, RENATO</h2><p>THE MOST ADVANCED BIRTHDAY WEBSITE OF 2004*</p></div>
+      <div class="status-box"><div>● ONLINE<br><b>VISITOR #000026</b></div></div>
     </header>
+<div id="v24-home" class="desktop-home-wrap">
+  <a class="desktop-home" href="index.html">★ HOME ★</a>
+</div>
 
     <div class="desktop-body">
       <aside class="sidebar">
@@ -324,7 +341,7 @@
         </section>
 <section id="future" class="future-section win-box">
           <div class="box-head">✉️ MESSAGE TO POSTERITY.EXE</div>
-          <div class="future-inner"><h3>RENATINHO, WRITE TO YOUR FUTURE SELF</h3><p>Esta aba é só dele. Um recado para o Renatinho do futuro.</p><textarea id="futureMessage" rows="8" maxlength="1200" placeholder="Querido Renatinho do futuro..."></textarea><div class="future-actions"><button id="saveFuture" class="pixel-btn">💾 SEAL MESSAGE</button><span id="futureStatus">UNSEALED</span></div></div>
+          <div class="future-inner"><h3>RENATINHO, WRITE TO YOUR FUTURE SELF</h3><p>Esta aba é só dele. Um recado para o Renato do futuro.</p><textarea id="futureMessage" rows="8" maxlength="1200" placeholder="Querido Renatinho do futuro..."></textarea><div class="future-actions"><button id="saveFuture" class="pixel-btn">💾 SEAL MESSAGE</button><span id="futureStatus">UNSEALED</span></div></div>
         </section>
       </main>
     </div>
