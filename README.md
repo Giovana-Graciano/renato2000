@@ -1,7 +1,7 @@
 # Renatinho Birthday — V8 Y2K
 
 Estrutura:
-- `index.html` — experiência pública do Renato.
+- `index.html` — experiência pública do Renatinho.
 - `create.html` — área secreta dos amigos.
 - `admin.html` — área privada da organizadora.
 - `cards/cards.json` — cartões publicados.
@@ -61,7 +61,6 @@ A música de arquivo pode tocar no clique de abertura. YouTube/Spotify dependem 
 
 ## Final language pass
 - Site naming uses RENATO and RENATINHO.
-- Removed the nickname RENATO entirely.
 
 
 ## V24
@@ -69,8 +68,5 @@ A música de arquivo pode tocar no clique de abertura. YouTube/Spotify dependem 
 - Added a standalone ★ HOME ★ desktop-style shortcut directly below the header.
 - No other site functionality or layout was intentionally changed.
 
-## V25 — final language pass
-- Main birthday/public copy uses RENATO.
-- Nostalgic/2000s branded elements use RENATINHO.
-- RÊ is not used.
-- No layout or functionality changes from V24.
+- Final naming rule: RENATO is used in main/personal copy; RENATINHO remains in selected Y2K/branded elements.
+- The nickname Rê is not used.
