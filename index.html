@@ -167,6 +167,35 @@
   display:inline-block!important;
 }
 </style>
+
+<style id="v22-home-position">
+/* V22: HOME is part of the site header, vertically centered and kept
+   inside the header instead of sitting against the viewport edge. */
+.sitebar{
+  position:relative!important;
+  min-height:72px!important;
+  box-sizing:border-box!important;
+}
+.v18-site-nav{
+  position:absolute!important;
+  right:12px!important;
+  top:50%!important;
+  transform:translateY(-50%)!important;
+  z-index:50!important;
+  margin:0!important;
+  padding:0!important;
+}
+.v18-site-nav a{
+  position:static!important;
+  margin:0!important;
+  white-space:nowrap!important;
+}
+@media(max-width:700px){
+  .sitebar{min-height:78px!important}
+  .v18-site-nav{right:7px!important}
+  .v18-site-nav a{font-size:9px!important;padding:6px 8px!important}
+}
+</style>
 </head>
 <body>
 <div class="crt"></div>

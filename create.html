@@ -132,6 +132,17 @@ body.factory-locked>main{filter:blur(8px);pointer-events:none;user-select:none}
     </div>
   </div>
 </main>
+
+<script>
+/* V21 friend-area state repair */
+(()=>{
+  const gate=document.querySelector("#friendGate");
+  if(sessionStorage.getItem("renatinhoFriendAccess")==="1"){
+    if(gate) gate.style.display="none";
+    document.body.classList.remove("factory-locked");
+  }
+})();
+</script>
 <script>
 (()=>{
  const q=s=>document.querySelector(s), qa=s=>document.querySelectorAll(s);
@@ -149,8 +160,12 @@ body.factory-locked>main{filter:blur(8px);pointer-events:none;user-select:none}
      q("#friendPassword").animate([{transform:"translateX(-5px)"},{transform:"translateX(5px)"},{transform:"translateX(0)"}],{duration:180});
    }
  }
- document.body.classList.add("factory-locked");
- if(sessionStorage.getItem("renatinhoFriendAccess")==="1") gate.style.display="none";
+ if(sessionStorage.getItem("renatinhoFriendAccess")==="1"){
+   gate.style.display="none";
+   document.body.classList.remove("factory-locked");
+ }else{
+   document.body.classList.add("factory-locked");
+ }
  q("#friendUnlock")?.addEventListener("click",unlock);
  q("#friendPassword")?.addEventListener("keydown",e=>{if(e.key==="Enter")unlock()});
 

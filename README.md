@@ -41,3 +41,13 @@ A música de arquivo pode tocar no clique de abertura. YouTube/Spotify dependem 
 - MSN Messenger, Friends Photo Booth and Save to Floppy now share the intended three-column app row.
 - Moved HOME into the site's top header instead of positioning it against the page/browser edge.
 - No Card Factory, Love File, or app functionality changes.
+
+## V21 — Friend Area fix
+- Fixed the blurred Card Factory state shown when a previous session had already unlocked access.
+- If `renatinhoFriendAccess=1` exists, the gate is hidden AND `factory-locked` is removed.
+- No Card Factory fields, preview, themes, photos, GIFs, music, or export logic were changed.
+
+
+## V22
+- Adjusted only the HOME button position: vertically centered inside the site header.
+- No changes to Card Factory, Love File, or Old Internet Zone.
