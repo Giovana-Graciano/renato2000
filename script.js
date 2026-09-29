@@ -12,7 +12,7 @@ async function loadLoveFile(){try{const r=await fetch("love-file.json?v=1",{cach
 async function loadCards(){
   await loadLoveFile();
   try{
-    const r=await fetch("cards/cards.json?v=8",{cache:"no-store"});
+    const r=await fetch("cards/cards.json?v=GIFTEST27",{cache:"no-store"});
     if(!r.ok) throw new Error("cards.json");
     cards=await r.json();
   }catch(e){cards=fallback}

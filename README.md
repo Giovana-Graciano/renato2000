@@ -70,3 +70,19 @@ A música de arquivo pode tocar no clique de abertura. YouTube/Spotify dependem 
 
 - Final naming rule: RENATO is used in main/personal copy; RENATINHO remains in selected Y2K/branded elements.
 - The nickname Rê is not used.
+
+
+## TEST BUILD — FAKE FRIEND CARDS
+This build installs the fake cards generated from the Card Factory:
+- GIGI / gigi-29aua
+- BRUNO / bruno-29tkj
+
+Their photos, GIF fields, themes, text colors, animation types, and YouTube music metadata are preserved exactly as generated.
+
+This is a test build only; the original V26 remains unchanged.
+
+
+## V27 — real GIF test
+- Replaced the Tenor page URL in the two fake cards with a direct `.gif` image URL from GIPHY's documented image URL format.
+- The same direct GIF is used in the top and bottom GIF slots for testing.
+- Original V26 remains unchanged.
