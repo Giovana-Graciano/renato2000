@@ -35,3 +35,9 @@ A música de arquivo pode tocar no clique de abertura. YouTube/Spotify dependem 
 - MSN Messenger, Friends Photo Booth, and Save to Floppy now occupy evenly spaced grid columns.
 - Added responsive 2-column and 1-column breakpoints.
 - Internal functionality of the three apps was not changed.
+
+## V20
+- Fixed the actual OLD INTERNET ZONE layout bug: `.legacy-zone` is no longer a grid container.
+- MSN Messenger, Friends Photo Booth and Save to Floppy now share the intended three-column app row.
+- Moved HOME into the site's top header instead of positioning it against the page/browser edge.
+- No Card Factory, Love File, or app functionality changes.

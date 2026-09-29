@@ -99,8 +99,76 @@
   }
 }
 </style>
+
+<style id="v20-old-zone-fix">
+/* The zone is a normal container; ONLY the app row is a grid. */
+#legacy.legacy-zone,
+.legacy-zone.retro-zone-fixed{
+  display:block!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  padding:0!important;
+}
+#legacy .legacy-grid,
+.legacy-zone .legacy-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:16px!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  padding:16px!important;
+  margin:0!important;
+  align-items:stretch!important;
+}
+#legacy .retro-app,
+.legacy-zone .retro-app{
+  width:100%!important;
+  min-width:0!important;
+  min-height:175px!important;
+  height:auto!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+}
+#legacy .app-title,
+.legacy-zone .app-title{
+  min-height:40px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  line-height:1.15!important;
+  padding:7px 6px!important;
+  box-sizing:border-box!important;
+  white-space:normal!important;
+}
+@media(max-width:1050px){
+  #legacy .legacy-grid,
+  .legacy-zone .legacy-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:680px){
+  #legacy .legacy-grid,
+  .legacy-zone .legacy-grid{
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+    padding:10px!important;
+  }
+}
+
+/* HOME belongs to the site header, not to the browser/page edge. */
+.v18-site-nav{
+  position:absolute!important;
+  right:10px!important;
+  top:10px!important;
+  z-index:20!important;
+  display:block!important;
+}
+.sitebar{position:relative!important}
+.v18-site-nav a{
+  display:inline-block!important;
+}
+</style>
 </head>
-<body><nav class="v18-site-nav"><a href="index.html">⌂ HOME</a></nav>
+<body>
 <div class="crt"></div>
 <div class="scan-noise"></div>
 <div class="cursor-spark" id="cursorSpark"></div>
@@ -127,7 +195,7 @@
 
 <section id="site" class="screen site-screen hidden">
   <div class="desktop">
-    <header class="sitebar">
+    <header class="sitebar"><nav class="v18-site-nav"><a href="index.html">⌂ HOME</a></nav>
       <div class="brand"><b>RENATINHO</b><small>2000</small></div>
       <div class="site-title"><span class="blink">★ SPECIAL EDITION ★</span><h2>FELIZ ANIVERSÁRIO RENATINHO</h2><p>THE MOST ADVANCED BIRTHDAY WEBSITE OF 2004*</p></div>
       <div class="status-box">● ONLINE<br><b>VISITOR #000026</b></div>
